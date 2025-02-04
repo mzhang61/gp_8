@@ -73,7 +73,7 @@ def process_survey_data():
             # 4b: Fetch AbsentEmployeeReason
             absent_reason = fetch_survey_value(cursor, employee_id, "AbsentEmployeeReason")
             # 4c: Fetch Certifications
-            certifications = fetch_survey_value(cursor, employee_id, "CERTIFICATION")
+            certifications = fetch_survey_value(cursor, employee_id, "Certifications")
             # 4E: COMBINE and store data
             record = (emp_id, first_name, last_name, absent_reason, certifications)
             insert_data.append(record)
